@@ -41,7 +41,8 @@ class Folly < Formula
     cd "folly" do
       system "autoreconf", "-fvi"
       system "./configure", "--prefix=#{prefix}", "--disable-silent-rules",
-                            "--disable-dependency-tracking"
+                            "--disable-dependency-tracking",
+                            "--with-boost-libdir=#{Formula["boost"].opt_lib}"
       system "make"
       system "make", "install"
     end
