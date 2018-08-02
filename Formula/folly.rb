@@ -3,7 +3,7 @@ class Folly < Formula
   homepage "https://github.com/facebook/folly"
   url "https://github.com/karasikov/folly/archive/v2018.07.16.01.tar.gz"
   sha256 "d1dea8f19c28274bb6b356d0b1e9b4707e56ab1c100aed29f3102f4076431627"
-  head "https://github.com/karasikov/folly.git"
+  head "https://github.com/karasikov/folly.git", :branch => "patch-1"
 
   bottle do
     cellar :any
